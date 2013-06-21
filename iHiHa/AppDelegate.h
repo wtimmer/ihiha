@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Newsstandkit/NewsstandKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
