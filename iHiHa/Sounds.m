@@ -4,8 +4,7 @@
 //
 //  Created by Wouter Timmer on 29-09-12.
 //  Copyright (c) 2012 Wouter Timmer. All rights reserved.
-//  Copy lokaal -> Master ihiha fork fsfsdfds 
-//
+//  Copy lokaal -> Master ihiha fork 
 
 #import "Sounds.h"
 
