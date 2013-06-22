@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Word Of - First-->
@@ -21,10 +21,6 @@
                             <adBannerView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bbu-zo-8lj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <requiredContentSizeIdentifiers>
-                                    <string>ADBannerContentSizeLandscape</string>
-                                    <string>ADBannerContentSizePortrait</string>
-                                </requiredContentSizeIdentifiers>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="l6Z-Hp-Uqm"/>
                                 </connections>
@@ -58,10 +54,6 @@
                             </mapView>
                             <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pgA-SH-AOX">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <requiredContentSizeIdentifiers>
-                                    <string>ADBannerContentSizeLandscape</string>
-                                    <string>ADBannerContentSizePortrait</string>
-                                </requiredContentSizeIdentifiers>
                                 <connections>
                                     <outlet property="delegate" destination="3" id="b9H-QK-DaA"/>
                                 </connections>
@@ -89,10 +81,6 @@
                         <subviews>
                             <adBannerView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kCe-eY-8pR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <requiredContentSizeIdentifiers>
-                                    <string>ADBannerContentSizeLandscape</string>
-                                    <string>ADBannerContentSizePortrait</string>
-                                </requiredContentSizeIdentifiers>
                                 <connections>
                                     <outlet property="delegate" destination="VFa-ig-Cvl" id="Sp0-aN-ize"/>
                                 </connections>
@@ -151,7 +139,7 @@
                                 <rect key="frame" x="20" y="191" width="80" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="iB_mond_level_1.png">
+                                <state key="normal" title="Button" image="iB_mond_level_1_active.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -166,7 +154,7 @@
                                 <rect key="frame" x="108" y="191" width="80" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="iB_mond_level_2.png">
+                                <state key="normal" title="Button" image="iB_mond_level_2_active.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -181,7 +169,7 @@
                                 <rect key="frame" x="196" y="191" width="80" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="iB.png">
+                                <state key="normal" title="Button" image="iB_active.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -241,10 +229,6 @@
                         <subviews>
                             <adBannerView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IdL-ho-Q6c">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <requiredContentSizeIdentifiers>
-                                    <string>ADBannerContentSizeLandscape</string>
-                                    <string>ADBannerContentSizePortrait</string>
-                                </requiredContentSizeIdentifiers>
                             </adBannerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="iB.jpg" id="WfK-TI-cfD">
                                 <rect key="frame" x="0.0" y="66" width="320" height="345"/>
@@ -322,9 +306,10 @@
         <image name="Tabbarworld.png" width="30" height="29"/>
         <image name="TabberRealTime.png" width="30" height="30"/>
         <image name="iB.jpg" width="280" height="353"/>
-        <image name="iB.png" width="280" height="353"/>
+        <image name="iB_active.png" width="280" height="353"/>
         <image name="iB_mond_level_1.png" width="280" height="353"/>
-        <image name="iB_mond_level_2.png" width="773" height="975"/>
+        <image name="iB_mond_level_1_active.png" width="280" height="353"/>
+        <image name="iB_mond_level_2_active.png" width="280" height="353"/>
         <image name="level-14.png" width="50" height="50"/>
         <image name="play2.png" width="225" height="225"/>
         <image name="rec.png" width="120" height="120"/>

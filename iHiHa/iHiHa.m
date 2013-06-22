@@ -505,13 +505,13 @@
     
     CFArrayRef myArray = CNCopySupportedInterfaces();
     // Get the dictionary containing the captive network infomation
-    CFDictionaryRef captiveNtwrkDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
+  //  CFDictionaryRef captiveNtwrkDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
     
    // NSLog(@"Information of the network we're connected to: %@", captiveNtwrkDict);
     
-    NSDictionary *dict = (__bridge NSDictionary*) captiveNtwrkDict;
-    SSID = [dict objectForKey:@"SSID"];
-   BSSID = [dict objectForKey:@"BSSID"];
+//    NSDictionary *dict = (__bridge NSDictionary*) captiveNtwrkDict;
+//    SSID = [dict objectForKey:@"SSID"];
+//   BSSID = [dict objectForKey:@"BSSID"];
     
    // NSLog(@"%@ %@",Interface,CurrentNetwork);
     

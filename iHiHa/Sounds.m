@@ -19,6 +19,7 @@
 -(void)Ib1 {
     
     [self prepairaudiofile:@"sound level 1.caf" alternative:@"HiHiHaHa Level 1" ];
+
     iB.image = ib1Button.imageView.image;
     ib1Button.enabled = NO;
     ib2Button.enabled = YES;
