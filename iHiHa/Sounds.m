@@ -19,7 +19,7 @@
 -(void)Ib1 {
     
     [self prepairaudiofile:@"sound level 1.caf" alternative:@"HiHiHaHa Level 1" ];
-    iB.image = ib1Button.imageView.image;
+   
     ib1Button.enabled = NO;
     ib2Button.enabled = YES;
     ib3Button.enabled = YES;
@@ -28,14 +28,13 @@
 -(void)Ib2{
     
     [self prepairaudiofile:@"sound level 2.caf" alternative:@"HiHiHaHa Level 2" ];
-    iB.image = ib2Button.imageView.image;
+   
     ib1Button.enabled = YES;
     ib2Button.enabled = NO;
     ib3Button.enabled = YES;
 }
 -(void)Ib3 {
     [self prepairaudiofile:@"sound level 3.caf" alternative:@"HiHiHaHa Level 3" ];
-    iB.image = ib3Button.imageView.image;
     ib1Button.enabled = YES;
     ib2Button.enabled = YES;
     ib3Button.enabled = NO;
