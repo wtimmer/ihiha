@@ -4,7 +4,7 @@
 //
 //  Created by Wouter Timmer on 29-09-12.
 //  Copyright (c) 2012 Wouter Timmer. All rights reserved.
-//  Copy
+//  Copy lokaal
 //
 
 #import "Sounds.h"
