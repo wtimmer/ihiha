@@ -32,13 +32,16 @@
     iB.image = [UIImage imageNamed:@"iB_mond_level_1.png"];
     if ([self isRecordFileactive])  {
         [ ib1Button setImage:[UIImage  imageNamed:@"iB_mond_level_1_record.png"] forState:UIControlStateNormal ];
-        [ ib1Button setImage:[UIImage  imageNamed:@"iB_mond_level_1_record.png"] forState:UIControlStateDisabled ];
+        [ ib1Button setImage:[UIImage  imageNamed:@" "] forState:UIControlStateDisabled ];
     } else {
         
         [ ib1Button setImage:[UIImage  imageNamed:@"iB_mond_level_1_active.png"] forState:UIControlStateNormal ];
-        [ ib1Button setImage:[UIImage  imageNamed:@"iB_mond_level_1_active.png"] forState:UIControlStateDisabled ];
+        [ ib1Button setImage:[UIImage  imageNamed:@""] forState:UIControlStateDisabled ];
         
     }
+    ib1Button.enabled = NO;
+    ib2Button.enabled = YES;
+    ib3Button.enabled = YES;
 
     
 }
@@ -49,27 +52,31 @@
     
     if ([self isRecordFileactive])  {
         [ ib2Button setImage:[UIImage  imageNamed:@"iB_mond_level_2_record.png"] forState:UIControlStateNormal ];
-        [ ib2Button setImage:[UIImage  imageNamed:@"iB_mond_level_2_record.png"] forState:UIControlStateDisabled ];
+        [ ib2Button setImage:[UIImage  imageNamed:@" "] forState:UIControlStateDisabled ];
     } else {
         
         [ ib2Button setImage:[UIImage  imageNamed:@"iB_mond_level_2_active.png"] forState:UIControlStateNormal ];
-        [ ib2Button setImage:[UIImage  imageNamed:@"iB_mond_level_2_active.png"] forState:UIControlStateDisabled ];
+        [ ib2Button setImage:[UIImage  imageNamed:@" "] forState:UIControlStateDisabled ];
 
     }
-
+    ib1Button.enabled = YES;
+    ib2Button.enabled = NO;
+    ib3Button.enabled = YES;
 }
 -(void)Ib3 {
     [self prepairaudiofile:@"sound level 3.caf" alternative:@"HiHiHaHa Level 3" ];
     iB.image = [UIImage imageNamed:@"iB.png"];
     if ([self isRecordFileactive])  {
         [ ib3Button setImage:[UIImage  imageNamed:@"iB_record.png"] forState:UIControlStateNormal ];
-        [ ib3Button setImage:[UIImage  imageNamed:@"iB_record.png"] forState:UIControlStateDisabled ];
+        [ ib3Button setImage:[UIImage  imageNamed:@" "] forState:UIControlStateDisabled ];
     } else {
         [ ib3Button setImage:[UIImage  imageNamed:@"iB_active.png"] forState:UIControlStateNormal ];
-        [ ib3Button setImage:[UIImage  imageNamed:@"iB_active.png"] forState:UIControlStateDisabled ];
+        [ ib3Button setImage:[UIImage  imageNamed:@" "] forState:UIControlStateDisabled ];
         
     }
-
+    ib1Button.enabled = YES;
+    ib2Button.enabled = YES;
+    ib3Button.enabled = NO;
 }
 
 - (void)viewDidLoad{
@@ -83,9 +90,11 @@
                                    userInfo: nil
                                     repeats: YES];
     Progress.hidden = YES ;
-  //  [self Ib1];
-  //  [self Ib3];
-  //  [self Ib2];
+    [self Ib1];
+    [self Ib3];
+    [self Ib2];
+    
+
     
    
 }
@@ -112,9 +121,6 @@
         resetButton.hidden = YES;
         
     }
-    [self Ib1];
-    [self Ib3];
-    [self Ib2];
 
 
 }
@@ -210,14 +216,14 @@
                                        userInfo: nil
                                         repeats: NO];
     }
-    [self Ib1];
-    [self Ib3];
-    [self Ib2];
 }
+
 -(void)stop{
     stopButton.enabled = NO;
     playButton.enabled = YES;
     recordButton.enabled = YES;
+    
+    
     
     if (audioRecorder.recording)
     {
@@ -225,7 +231,10 @@
     } else if (audioPlayer.playing) {
         [audioPlayer stop];
     }
+    
     [self SetResetButton];
+   
+
 
 }
 -(void) playAudio{
@@ -265,6 +274,10 @@
     recordButton.enabled = YES;
     stopButton.enabled = NO;
     playButton.enabled = YES;
+    [self Ib1];
+    [self Ib3];
+    [self Ib2];
+
 }
 -(void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error{
     NSLog(@"Decode Error occurred");
@@ -280,9 +293,7 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     [fileManager removeItemAtPath:soundFilePath error:NULL];
     [self SetResetButton];
-    [self Ib1];
-    [self Ib3];
-    [self Ib2];
+
     
 }
 
