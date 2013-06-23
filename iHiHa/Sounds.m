@@ -16,28 +16,60 @@
 @implementation Sounds
 
 
+-(IBAction)ib1Button:(id)sender {
+    [self Ib1];
+}
+
+-(IBAction)ib2Button:(id)sender {
+    [self Ib2];
+}
+-(IBAction)ib3Button:(id)sender {
+    [self Ib3];
+}
 -(void)Ib1 {
     
     [self prepairaudiofile:@"sound level 1.caf" alternative:@"HiHiHaHa Level 1" ];
-   
-    ib1Button.enabled = NO;
-    ib2Button.enabled = YES;
-    ib3Button.enabled = YES;
+    iB.image = [UIImage imageNamed:@"iB_mond_level_1.png"];
+    if ([self isRecordFileactive])  {
+        [ ib1Button setImage:[UIImage  imageNamed:@"iB_mond_level_1_record.png"] forState:UIControlStateNormal ];
+        [ ib1Button setImage:[UIImage  imageNamed:@"iB_mond_level_1_record.png"] forState:UIControlStateDisabled ];
+    } else {
+        
+        [ ib1Button setImage:[UIImage  imageNamed:@"iB_mond_level_1_active.png"] forState:UIControlStateNormal ];
+        [ ib1Button setImage:[UIImage  imageNamed:@"iB_mond_level_1_active.png"] forState:UIControlStateDisabled ];
+        
+    }
+
     
 }
 -(void)Ib2{
     
     [self prepairaudiofile:@"sound level 2.caf" alternative:@"HiHiHaHa Level 2" ];
-   
-    ib1Button.enabled = YES;
-    ib2Button.enabled = NO;
-    ib3Button.enabled = YES;
+   iB.image = [UIImage imageNamed:@"iB_mond_level_2.png"];
+    
+    if ([self isRecordFileactive])  {
+        [ ib2Button setImage:[UIImage  imageNamed:@"iB_mond_level_2_record.png"] forState:UIControlStateNormal ];
+        [ ib2Button setImage:[UIImage  imageNamed:@"iB_mond_level_2_record.png"] forState:UIControlStateDisabled ];
+    } else {
+        
+        [ ib2Button setImage:[UIImage  imageNamed:@"iB_mond_level_2_active.png"] forState:UIControlStateNormal ];
+        [ ib2Button setImage:[UIImage  imageNamed:@"iB_mond_level_2_active.png"] forState:UIControlStateDisabled ];
+
+    }
+
 }
 -(void)Ib3 {
     [self prepairaudiofile:@"sound level 3.caf" alternative:@"HiHiHaHa Level 3" ];
-    ib1Button.enabled = YES;
-    ib2Button.enabled = YES;
-    ib3Button.enabled = NO;
+    iB.image = [UIImage imageNamed:@"iB.png"];
+    if ([self isRecordFileactive])  {
+        [ ib3Button setImage:[UIImage  imageNamed:@"iB_record.png"] forState:UIControlStateNormal ];
+        [ ib3Button setImage:[UIImage  imageNamed:@"iB_record.png"] forState:UIControlStateDisabled ];
+    } else {
+        [ ib3Button setImage:[UIImage  imageNamed:@"iB_active.png"] forState:UIControlStateNormal ];
+        [ ib3Button setImage:[UIImage  imageNamed:@"iB_active.png"] forState:UIControlStateDisabled ];
+        
+    }
+
 }
 
 - (void)viewDidLoad{
@@ -51,8 +83,10 @@
                                    userInfo: nil
                                     repeats: YES];
     Progress.hidden = YES ;
+  //  [self Ib1];
+  //  [self Ib3];
+  //  [self Ib2];
     
-    [self Ib2];
    
 }
 -(BOOL )isRecordFileactive {
@@ -78,6 +112,11 @@
         resetButton.hidden = YES;
         
     }
+    [self Ib1];
+    [self Ib3];
+    [self Ib2];
+
+
 }
 -(NSString *)Docsdir {
     NSArray *dirPaths;    
@@ -171,6 +210,9 @@
                                        userInfo: nil
                                         repeats: NO];
     }
+    [self Ib1];
+    [self Ib3];
+    [self Ib2];
 }
 -(void)stop{
     stopButton.enabled = NO;
@@ -238,6 +280,10 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     [fileManager removeItemAtPath:soundFilePath error:NULL];
     [self SetResetButton];
+    [self Ib1];
+    [self Ib3];
+    [self Ib2];
+    
 }
 
 #pragma Banner
