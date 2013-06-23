@@ -47,11 +47,8 @@
 		6C21EAE116625DA90075EFEA /* iB.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C21EADF16625DA90075EFEA /* iB.png */; };
 		6C622635165181B4000E2EB8 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C622634165181B4000E2EB8 /* iTunesArtwork.png */; };
 		6C6BBAC316179838007905C0 /* RealTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BBAC216179838007905C0 /* RealTime.m */; };
-		6C6BBAE516179CD6007905C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BBAE016179CD6007905C0 /* Default-568h@2x.png */; };
 		6C6BBAE616179CD6007905C0 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BBAE116179CD6007905C0 /* Default-Landscape.png */; };
 		6C6BBAE716179CD6007905C0 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BBAE216179CD6007905C0 /* Default-Portrait.png */; };
-		6C6BBAE816179CD6007905C0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BBAE316179CD6007905C0 /* Default.png */; };
-		6C6BBAE916179CD6007905C0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BBAE416179CD6007905C0 /* Default@2x.png */; };
 		6C6BBAF216179D62007905C0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BBAEA16179D62007905C0 /* Icon-72.png */; };
 		6C6BBAF316179D62007905C0 /* Icon-Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BBAEB16179D62007905C0 /* Icon-Map.png */; };
 		6C6BBAF416179D62007905C0 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BBAEC16179D62007905C0 /* Icon-Small-50.png */; };
@@ -743,7 +740,7 @@
 		6C9BCE131612456A002F228D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Wouter Timmer";
 			};
 			buildConfigurationList = 6C9BCE161612456A002F228D /* Build configuration list for PBXProject "iHiHa" */;
@@ -786,11 +783,8 @@
 				6C952D2416164D9C003F4310 /* iB_mond_level_1.jpg in Resources */,
 				6C952D2516164D9C003F4310 /* iB_mond_level_2.png in Resources */,
 				6C952D2616164D9C003F4310 /* iB.jpg in Resources */,
-				6C6BBAE516179CD6007905C0 /* Default-568h@2x.png in Resources */,
 				6C6BBAE616179CD6007905C0 /* Default-Landscape.png in Resources */,
 				6C6BBAE716179CD6007905C0 /* Default-Portrait.png in Resources */,
-				6C6BBAE816179CD6007905C0 /* Default.png in Resources */,
-				6C6BBAE916179CD6007905C0 /* Default@2x.png in Resources */,
 				6C6BBAF216179D62007905C0 /* Icon-72.png in Resources */,
 				6C6BBAF316179D62007905C0 /* Icon-Map.png in Resources */,
 				6C6BBAF416179D62007905C0 /* Icon-Small-50.png in Resources */,

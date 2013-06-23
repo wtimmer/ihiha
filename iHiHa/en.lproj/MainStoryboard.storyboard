@@ -147,7 +147,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Ib1" destination="VFa-ig-Cvl" eventType="touchUpInside" id="jtM-Kd-N0g"/>
+                                    <action selector="ib1Button:" destination="VFa-ig-Cvl" eventType="touchUpInside" id="PCZ-HS-gCb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D0Z-6e-GF8">
@@ -162,7 +162,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Ib2" destination="VFa-ig-Cvl" eventType="touchUpInside" id="shS-Sz-7Sy"/>
+                                    <action selector="ib2Button:" destination="VFa-ig-Cvl" eventType="touchUpInside" id="JUV-xM-j5z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LV9-Pa-E4X">
@@ -177,7 +177,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Ib3" destination="VFa-ig-Cvl" eventType="touchUpInside" id="p7j-qY-s4y"/>
+                                    <action selector="ib3Button:" destination="VFa-ig-Cvl" eventType="touchUpInside" id="DuS-Vq-tgh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,6 +187,7 @@
                     <connections>
                         <outlet property="Progress" destination="y3u-YA-5vA" id="RRf-Zl-c96"/>
                         <outlet property="adView" destination="kCe-eY-8pR" id="J3E-gk-N8x"/>
+                        <outlet property="iB" destination="SzZ-dM-1w3" id="xu5-cN-SLb"/>
                         <outlet property="ib1Button" destination="6DL-8X-GOl" id="8XE-ce-K0k"/>
                         <outlet property="ib2Button" destination="D0Z-6e-GF8" id="xIo-Ea-V57"/>
                         <outlet property="ib3Button" destination="LV9-Pa-E4X" id="Su5-LC-c8V"/>
@@ -330,6 +331,9 @@
                 <relationship kind="action" name="Ib2"/>
                 <relationship kind="action" name="Ib3"/>
                 <relationship kind="action" name="del"/>
+                <relationship kind="action" name="ib1Button:"/>
+                <relationship kind="action" name="ib2Button:"/>
+                <relationship kind="action" name="ib3Button:"/>
                 <relationship kind="action" name="playAudio"/>
                 <relationship kind="action" name="recordAudio"/>
                 <relationship kind="action" name="stop"/>
