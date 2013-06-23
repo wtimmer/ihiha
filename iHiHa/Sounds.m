@@ -83,9 +83,9 @@
                                    userInfo: nil
                                     repeats: YES];
     Progress.hidden = YES ;
-    [self Ib1];
-    [self Ib3];
-    [self Ib2];
+  //  [self Ib1];
+  //  [self Ib3];
+  //  [self Ib2];
     
    
 }
@@ -112,6 +112,11 @@
         resetButton.hidden = YES;
         
     }
+    [self Ib1];
+    [self Ib3];
+    [self Ib2];
+
+
 }
 -(NSString *)Docsdir {
     NSArray *dirPaths;    
@@ -205,6 +210,9 @@
                                        userInfo: nil
                                         repeats: NO];
     }
+    [self Ib1];
+    [self Ib3];
+    [self Ib2];
 }
 -(void)stop{
     stopButton.enabled = NO;
@@ -272,6 +280,10 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     [fileManager removeItemAtPath:soundFilePath error:NULL];
     [self SetResetButton];
+    [self Ib1];
+    [self Ib3];
+    [self Ib2];
+    
 }
 
 #pragma Banner
